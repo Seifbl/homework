@@ -35,6 +35,13 @@ public class UniversiteServiceimpl implements IUniversiteService{
     public void removeUniversity(long idUniversity) {
         universiteRepository.deleteById(idUniversity);
     }
+
+    @Override
+    public Universite affecterFoyerAUniversite(long idFoyer, String nomUniversite) {
+        return null;
+    }
+
+
 }
 
 
