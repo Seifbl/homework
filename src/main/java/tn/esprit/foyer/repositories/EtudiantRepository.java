@@ -6,4 +6,5 @@ import tn.esprit.foyer.entities.Etudiant;
 
 @Repository
 public interface EtudiantRepository extends JpaRepository<Etudiant,Long> {
+    Etudiant findEtudiantByNomEtAndPrenomEt(String nomEt,String prenomEt);
 }

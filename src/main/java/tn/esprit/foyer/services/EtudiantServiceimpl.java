@@ -36,4 +36,6 @@ EtudiantRepository etudiantRepository;
     public void removeEtudiant(Long idEtudiant) {
         etudiantRepository.deleteById(idEtudiant);
     }
+     Etudiant affecterEtudiantAReservation(String nomEt, String prenomEt, String idReservation);
+
 }

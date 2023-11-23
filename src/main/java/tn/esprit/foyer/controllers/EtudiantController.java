@@ -35,4 +35,9 @@ public class EtudiantController {
         etudiantService.removeEtudiant(etudiantId);
     }
 
+    @PutMapping  ("/affecterEtudiantReservation")
+    public Etudiant affecterEtudiantAReservation(@RequestParam("idReservation") String  idReservation,@RequestParam("nomEt") String  nomEt,@RequestParam("prenomEt") String  prenomEt) {
+        return etudiantService.affecterEtudiantAReservation(nomEt,prenomEt,idReservation);
+    }
+
 }
